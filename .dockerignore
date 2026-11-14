@@ -1,0 +1,50 @@
+#Файлы гита
+.git
+.gitignore
+.github/
+
+#Кэш питона и build файлы
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.eggs/
+*.egg-info/
+dist/
+build/
+
+#Виртуальное окружение
+.env
+.venv
+env/
+venv/
+ENV/
+
+#Файлы ОС и IDE
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+#Файлы докера
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+#Локальные БД и модели с их весами
+data/raw/
+data/processed/
+*.sqlite
+*.db
+*.parquet
+sft/models/
+sft/runs/
+sft/outputs/
+*.safetensors
+*.ckpt
+*.bin
+
+#Документация и отчеты
+*.docx
+*.pdf
+README.md
