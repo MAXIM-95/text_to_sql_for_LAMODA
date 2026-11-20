@@ -30,6 +30,13 @@ services:
     volumes:
       - chdata:/var/lib/clickhouse
 
+  adminer: #интерфейс для постгре (так как у него своего интрфейса нет)
+    image: adminer:latest
+    container_name: lamoda_adminer
+    ports:
+      - "8080:8080"
+    restart: always
+
 volumes:
   pgdata:
   chdata:
